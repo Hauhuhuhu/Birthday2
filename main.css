@@ -44,7 +44,7 @@
     top: 0;
     bottom: 0;
     background-color: #fa406b;
-    /* display: none; */
+    display: none; 
 }
 .content__img {
     position: fixed;
