@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/happyBirthday/main.css">
+    <script src="./Pháo_hoa/confetti.min.js"></script>
+</head>
+<body>
+    <div class="body__text">
+        <div class="body js-boby-click">
+            <div class="body-click">
+                <header href="#" class="click">Click here!</header>
+            </div>
+        </div>
+    </div>
+    <div class="content js-body-cake">
+            <audio class="content__audio">
+                <source src="../happyBirthday/audio/ssstik.io_1718158525934.mp3">
+            </audio>
+            <div class="content__img">
+                <div class="content__img1"></div>
+                <div class="content__img2"></div>
+                <div class="content__img3"></div>
+            </div>
+            <div class="content__cake">
+                <div class="content__text">
+                    <h1 class="text">Happy Birthday To You</h1>
+                </div>
+                <div class="bottom_cake">
+                    <div class="bottom_cake-cream"></div>
+                    <div class="bottom_cake-cream-betwent"></div>
+                    <div class="bottom_cake-deco">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
+                <div class="bottom_cake2">
+                    <div class="bottom_cake-cream2"></div>
+                    <div class="bottom_cake-cream-betwent2"></div>
+                    <div class="bottom_cake-deco2">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+            
+                    </div>
+                </div>
+                <div class="bottom_cake3">
+                    <div class="bottom_cake-cream3"></div>
+                    <div class="bottom_cake-cream-betwent3"></div>
+                    <div class="bottom_cake-deco">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="top__cake"></div>
+                <div class="fire"></div>
+            </div>
+        
+    </div>
+    <script>
+        const clickOpen = document.querySelector(".js-boby-click");
+        const clickCake = document.querySelector(".js-body-cake");
+        
+        clickOpen.addEventListener('click', function() {
+            clickCake.classList.add('open');
+            var openAudio = document.querySelector(".content__audio");
+            openAudio.play();
+            const start = setTimeout(function() {
+                confetti.start();
+            })
+            const stop = setTimeout(function() {
+                confetti.stop();
+            }, 12000) 
+        })
+        clickCake.addEventListener('click', function() {
+            clickCake.classList.remove('open');
+            const stop = setTimeout(function() {
+                confetti.stop();
+            })
+        })
+    </script>
+    
+    
+</body>
+</html>
