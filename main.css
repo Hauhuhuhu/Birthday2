@@ -185,12 +185,16 @@
 
 }
 .content__text {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     top: 0;
     font-size: 1.1875rem;
-    margin-left: 0.5rem;
     color: #000;
     text-shadow: 3px 0px 3px #000;
+} 
+.text {
+    text-align: center;
 }
 
 .top__cake {
@@ -341,17 +345,6 @@
     height: 0.625rem;
     background-color: #fa406b;
     top: -0.625rem;
-}
-@media (min-width: 1024px) {
-    html {
-        font-size: 12px;
-    }
-}
-@media (max-width: 900px) {
-    html{
-        font-size: 8px;
-    }
-    
 }
 @media (max-width: 720px) {
     html {
@@ -512,9 +505,20 @@
     
 }
 
-@media (min-width: 721px) {
+@media (min-width: 721px) and (max-width: 1023px) {
+    html{
+        font-size: 8px;
+    }
     .container_text {
         display: none;
+    }
+    .content__cake {
+        bottom: 0%; !important
+    }
+}
+@media (min-width: 1024px) {
+    html {
+        font-size: 12px;
     }
 }
 
