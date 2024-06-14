@@ -353,6 +353,7 @@
     .body__text {
         display: none;
     }
+    /* xoay man hinh */
     .body {
         position: fixed;
         right: 0;
