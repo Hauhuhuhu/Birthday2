@@ -99,7 +99,6 @@
     background-size: 12rem;
     animation:  Top2 13s;
     background-repeat: no-repeat;
-    z-index: -100;
 }
 @keyframes Top2 {
     0% {
