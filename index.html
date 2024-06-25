@@ -89,7 +89,6 @@
     <script>
         const clickOpen = document.querySelector(".js-boby-click");
         const clickCake = document.querySelector(".js-body-cake");
-        
         clickOpen.addEventListener('click', function() {
             clickCake.classList.add('open');
             var openAudio = document.querySelector(".content__audio");
@@ -97,13 +96,11 @@
             confetti.start();
             const stop = setTimeout(function() {
                 confetti.stop();
-            }, 18000) 
+            }, 19000) 
         })
         clickCake.addEventListener('click', function() {
             clickCake.classList.remove('open');
         })
     </script>
-    
-    
 </body>
 </html>
