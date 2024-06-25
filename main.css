@@ -61,7 +61,7 @@
     bottom: 0;
     background-image: 
     url(./img/hk.jfif);
-    background-size: 12rem;
+    background-size: 15rem;
     animation:  Top 10s;
     background-repeat: no-repeat;
 }
@@ -96,7 +96,7 @@
     top: 0;
     bottom: 0;
     background-image: url(./img/khanhphumy.jfif);
-    background-size: 12rem;
+    background-size: 15rem;
     animation:  Top2 13s;
     background-repeat: no-repeat;
 }
@@ -136,7 +136,7 @@
     top: 0;
     bottom: 0;
     background-image: url(./img/tk.jfif);
-    background-size: 12rem;
+    background-size: 15rem;
     animation:  Top3 16s;
     background-repeat: no-repeat;
 }
@@ -176,12 +176,12 @@
 .content__cake {
     position: absolute;
     left: 40%;
-    bottom: 20%;
+    bottom: 10%;
     width: 25rem;
     height: 21.875rem;
     border: 0.125rem solid #fff;
     background-image: url(./img/background.webp);
-    z-index: 2;
+    z-index: 1;
 
 }
 .content__text {
@@ -190,11 +190,15 @@
     width: 100%;
     top: 0;
     font-size: 1.1875rem;
-    color: #000;
-    text-shadow: 3px 0px 3px #000;
+    /* text-shadow: 3px 0px 3px #00ffff; */
 } 
 .text {
     text-align: center;
+    background: linear-gradient(90deg, #00ffff,#ff00c3);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-weight: 800;
 }
 
 .top__cake {
