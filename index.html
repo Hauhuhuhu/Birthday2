@@ -69,6 +69,7 @@
                         <div></div>
                         <div></div>
                         <div></div>
+            
                     </div>
                 </div>
                 <div class="bottom_cake3">
@@ -93,18 +94,13 @@
             clickCake.classList.add('open');
             var openAudio = document.querySelector(".content__audio");
             openAudio.play();
-            const start = setTimeout(function() {
-                confetti.start();
-            })
+            confetti.start();
             const stop = setTimeout(function() {
                 confetti.stop();
-            }, 12000) 
+            }, 18000) 
         })
         clickCake.addEventListener('click', function() {
             clickCake.classList.remove('open');
-            const stop = setTimeout(function() {
-                confetti.stop();
-            })
         })
     </script>
     
