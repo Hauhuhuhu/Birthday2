@@ -38,9 +38,9 @@
                 <source src="./audio/ssstik.io_1718158525934.mp3">
             </audio>
             <div class="content__img">
-                <div class="content__img1"></div>
-                <div class="content__img2"></div>
-                <div class="content__img3"></div>
+                <div class="img1"></div>
+                <div class="img2"></div>
+                <div class="img3"></div>
             </div>
             <div class="content__cake">
                 <div class="content__text">
@@ -89,6 +89,7 @@
     <script>
         const clickOpen = document.querySelector(".js-boby-click");
         const clickCake = document.querySelector(".js-body-cake");
+        
         clickOpen.addEventListener('click', function() {
             clickCake.classList.add('open');
             var openAudio = document.querySelector(".content__audio");
@@ -96,11 +97,13 @@
             confetti.start();
             const stop = setTimeout(function() {
                 confetti.stop();
-            }, 19000) 
+            }, 18000) 
         })
         clickCake.addEventListener('click', function() {
             clickCake.classList.remove('open');
         })
     </script>
+    
+    
 </body>
 </html>
