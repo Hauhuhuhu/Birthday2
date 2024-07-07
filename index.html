@@ -4,25 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/happyBirthday/main.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.min.css">
     <script src="./Pháo_hoa/confetti.min.js"></script>
 </head>
 <body>
-    <div class="body__text">
-        <div class="body js-boby-click">
-            <div class="body-click">
+    <!-- Thiệp sn -->
+    <!-- <div class="body__text">
+        <div class="body ">
+            <div class="body-click js-boby-click">
                 <header href="#" class="click">Click here!</header>
             </div>
         </div>
+    </div> -->
+    <div class="main_congrats">
+        <div class="main_congrats-left">
+            <div class="main_congrats-left-body-img">
+                <h2 class="main_congrats-left-header-text">Happy BirthDay</h2>
+                <div class="main_congrats-left-img"></div>
+                <h2 class="main_congrats-left-bottom-text">Nguyễn Đức Thắng</h2>
+            </div>
+        </div>
+        <div class="main_congrats-right">
+            <div class="main_congrats-right-congrats">
+                <h2 class="main_congrats-right-date">
+                    10-7-2024
+                </h2>
+                <p class="main_congrats-right-congrats-text">
+                    CHÚC MỪNG SINH NHẬT <br> <br>
+                    Sinh nhật vui vẻ nhé! Chúc bạn có một năm mới đầy may mắn và thành công.
+                    <br> <br>
+                    Hãy ấn vào full màn hình sau đó click vào nút bên dưới
+                    <br>
+                    <div class="main_congrats-right-icon">
+                        <i class="fa-solid fa-expand js-fullscreen"></i>
+                    </div>
+                </p>
+                
+                <div class="main_congrats-right-body-click js-boby-click">
+                   <button href="#" class="click">Click here</button>
+                </div>
+            </div>
+        </div>
+
     </div>
+    <!-- end thiệp sn -->
+    <!-- happybirthday cake -->
     <div class="content js-body-cake">
             <audio class="content__audio">
-                <source src="../happyBirthday/audio/ssstik.io_1718158525934.mp3">
+                <source src="./audio/ssstik.io_1718158525934.mp3">
             </audio>
             <div class="content__img">
-                <div class="content__img1"></div>
-                <div class="content__img2"></div>
-                <div class="content__img3"></div>
+                <div class="img1"></div>
+                <div class="img2"></div>
+                <div class="img3"></div>
             </div>
             <div class="content__cake">
                 <div class="content__text">
@@ -41,7 +79,6 @@
                         <div></div>
                         <div></div>
                     </div>
-
                 </div>
                 <div class="bottom_cake2">
                     <div class="bottom_cake-cream2"></div>
@@ -51,7 +88,6 @@
                         <div></div>
                         <div></div>
                         <div></div>
-            
                     </div>
                 </div>
                 <div class="bottom_cake3">
@@ -66,31 +102,55 @@
                 <div class="top__cake"></div>
                 <div class="fire"></div>
             </div>
-        
     </div>
+    <!-- end happybirthday cake -->
+    <!-- Xoay màn hình -->
+    <div class="body">
+        <div class="container">
+            <div class="container_phone">
+                <div class="container_rotate-header"></div>
+                <div class="container_rotate-bottom"></div>
+                <div class="container_phone-header">
+                    <div class="container_phone-header-icon"></div>
+                </div>
+                <div class="container_phone-body"></div>
+                <div class="container_phone-bottom">
+                    <div class="container_phone-bottom-home"></div>
+                </div>
+            </div>
+            <div class="container_text">
+                <p class="text">Vui Lòng Xoay Ngang Màn Hình</p>
+            </div>
+        </div>
+    </div>
+    <!-- end Xoay màn hình -->
     <script>
         const clickOpen = document.querySelector(".js-boby-click");
         const clickCake = document.querySelector(".js-body-cake");
-        
+        const clickFullScreen = document.querySelector(".js-fullscreen")
+        var openAudio = document.querySelector(".content__audio");
+        clickFullScreen.addEventListener('click', function() {
+            const elem = document.documentElement; // Lấy phần tử HTML chính
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { // Firefox
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { // Chrome, Safari và Opera
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { // Internet Explorer/Edge
+                elem.msRequestFullscreen();
+            }
+        })
         clickOpen.addEventListener('click', function() {
             clickCake.classList.add('open');
-            var openAudio = document.querySelector(".content__audio");
             openAudio.play();
-            const start = setTimeout(function() {
-                confetti.start();
-            })
-            const stop = setTimeout(function() {
-                confetti.stop();
-            }, 12000) 
+            confetti.start();
         })
         clickCake.addEventListener('click', function() {
             clickCake.classList.remove('open');
-            const stop = setTimeout(function() {
-                confetti.stop();
-            })
+            openAudio.pause();
+            confetti.stop();
         })
     </script>
-    
-    
 </body>
 </html>
