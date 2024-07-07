@@ -13,6 +13,7 @@ html {
     bottom: 0;
     display: flex;
 }
+
 .main_congrats-left {
     position: relative;
     width: 50%;
@@ -601,6 +602,24 @@ html {
     .content__cake {
         bottom: 0%; !important
     }
+    /* thiep sn */
+    /* left */
+    .main_congrats-left-header-text {
+        top: 1%;
+    }
+    /* right */
+    .main_congrats-right-date {
+        margin-top: 5px;
+    }
+    .main_congrats-right-congrats-text {
+        margin-top: 1rem;
+        height: auto;
+    }
+    .main_congrats-right-body-click {
+        margin-top: 10px;
+        height: 20px;
+    }
+
 }
 @media (min-width: 1024px) {
     html {
