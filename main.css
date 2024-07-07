@@ -11,11 +11,6 @@ html {
     left: 0;
     top: 0;
     bottom: 0;
-<<<<<<< HEAD
-=======
-}
-.body {
->>>>>>> b97aab852d466c59bdaf45ab0ea2eb40c4e7c273
     display: flex;
 }
 
@@ -149,11 +144,7 @@ html {
     top: 0;
     left: 16.67%;
     transform: translateX(-50%);
-<<<<<<< HEAD
     background-image: url(./img/thang_1.jfif);
-=======
-    background-image: url(./img/hk.jfif);
->>>>>>> b97aab852d466c59bdaf45ab0ea2eb40c4e7c273
     background-size: 15rem;
     width: 15rem;
     height: 20rem;
@@ -164,11 +155,7 @@ html {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-<<<<<<< HEAD
     background-image: url(./img/thang_2.jfif);
-=======
-    background-image: url(./img/khanhphumy.jfif);
->>>>>>> b97aab852d466c59bdaf45ab0ea2eb40c4e7c273
     background-size: 15rem;
     width: 15rem;
     height: 20rem;
@@ -179,11 +166,7 @@ html {
     top: 0;
     left: 82.67%;
     transform: translateX(-50%);
-<<<<<<< HEAD
     background-image: url(./img/thang_3.jfif);
-=======
-    background-image: url(./img/tk.jfif);
->>>>>>> b97aab852d466c59bdaf45ab0ea2eb40c4e7c273
     background-size: 15rem;
     width: 15rem;
     height: 20rem;
@@ -448,10 +431,7 @@ html {
     background-color: #fa406b;
     top: -0.625rem;
 }
-<<<<<<< HEAD
 /* end happy birthday cake */
-=======
->>>>>>> b97aab852d466c59bdaf45ab0ea2eb40c4e7c273
 @media (max-width: 720px) {
     html {
         font-size: 12px;
